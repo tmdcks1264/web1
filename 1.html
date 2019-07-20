@@ -1,56 +1,67 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <meta  charset = " utf-8 ">
-<title > html </title >
-<H1> <HREF = " index.html을 " > WEB </a> </H1>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143678484-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-143678484-1');
-</script>
+<title >javascript</title >
+<style>
+body{
+  margin:0;
+}
+a{
+  color:black;
+  text-decoration: none;
+  }
+h1{
+  font-size:45px;
+text-align: center;
+border-bottom:1px solid gray;
+margin:0;
+padding:20px;
+}
+ol{
+  border-right:1px solid gray;
+  width:100px;
+margin:0;
+padding:20px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol{
+  padding-left: 33px;
+}
+#grid #article{
+  padding-left: 25px;
+}
+@media(max-width:800px){
+  #grid{
+    display: block;
+  }
+  ol{
+    border-right:none;
+  }
+  h1{
+    border-bottom:none;
+  }
+}
+</style>
 </head>
 <body>
+  <h1><a href="index.html">WEB</a> </h1>
+  <div id="grid">
 <ol>
-<li><a HREF=" 1.html "> HTML </a > </li >
-<li><a HREF=" 2.html "> CSS </a > </li >
-<li><a HREF=" 3.html "> havascript </a > </li>
-</ ol >
+<li><a HREF=" 1.html " > HTML </a > </li >
+<li><a HREF=" 2.html " id="active"> CSS </a > </li >
+<li><a HREF=" 3.html "> javascript </a > </li>
+</ol>
+<div id="article">
 <h2>HTML</h2>
-<p><strong>HTML(Hyper Text Markup langyage)이란</storong></p>
-<p>웹의 하이퍼 텍스트/미디어 문서를 작성하고 표현하는데 사용되는 표준 언어입니다.</p>
-<p>또한 마크업 언어로 흔히 말하는 태그(tag)를 이용하여 작성하게 됩니다.</p>
-<p>※표시할 정보(내용)가 있을 경우, 그 정보의 성격이나 기능을 태그라는 형식으로 두르는 것을 마크업이라고 합니다.</p>
-<p>이런 마크업 언어(markup language)로는 대표적인것이 html,xml이 있습니다.</p>
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-<p>웹페이지를 만들기 위한 언어로 웹브라우저 위에서 동작하는 언어다.</p>
-<p><strong>HT - HyperText</strong>, 문서와 문서가 링크로 연결되어 있다.
-<strong>M - Markup</strong>, 태그로 이루어져 있다.
-<strong>L - Language</strong></p>
-<p>
-  <div id="disqus_thread"></div>
-  <script>
-  /**
-  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-  /*
-  var disqus_config = function () {
-  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-  };
-  */
-  (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-  s.src = 'https://web1-html-3.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</p>
+<p>오늘날 컴퓨팅 분야에서 가장 주목 받는 것은 웹입니다. HTML은 바로 그 웹의 최소 단위인 웹페이지를 만드는 언어입니다. 그런 점에서 HTML은 웹의 출발점이라고 할 수 있습니다. 특히 최근에는 웹이 모바일이나 데스크탑 에플리케이션 개발에서 사용되고 있기 때문에 HTML의 중요성은 점점 커지고 있습니다.
+</P>
+<img src="http://thumbnail.egloos.net/600x0/http://pds26.egloos.com/pds/201605/18/11/a0077411_573b362c4947a.jpg"
+</DIV>
+</div>
 </BODY>
 </html>

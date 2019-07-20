@@ -1,58 +1,74 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <meta  charset = " utf-8 ">
-<title > web </title >
-<H1> <HREF = " index.html" > WEB </a> </H1>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143678484-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-143678484-1');
-</script>
+<title >WEB</title >
+<style>
+body{
+  margin:0;
+}
+a{
+  color:black;
+  text-decoration: none;
+  }
+h1{
+  font-size:45px;
+text-align: center;
+border-bottom:1px solid gray;
+margin:0;
+padding:20px;
+}
+ol{
+  border-right:1px solid gray;
+  width:100px;
+margin:0;
+padding:20px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol{
+  padding-left: 33px;
+}
+#grid #article{
+  padding-left: 25px;
+}
+@media(max-width:800px){
+  #grid{
+    display: block;
+  }
+  ol{
+    border-right:none;
+  }
+  h1{
+    border-bottom:none;
+  }
+}
+</style>
 </head>
 <body>
+  <h1><a href="index.html">WEB</a> </h1>
+  <div id="grid">
 <ol>
-<li><a HREF=" 1.html "> HTML </a > </li >
-<li><a HREF=" 2.html "> CSS </a > </li >
-<li><a HREF=" 3.html "> havascript </a > </li>
-</ ol >
-<h2>HTML</h2>
-<p>[웹(web)이란 무엇인가?]</p>
-<p>웹(web)이란? '월드 와이드 웹(world wide web)'줄임말로, 첫 글자를 따서WWW라고 부르기도 합니다.
-'웹을 영어 뜻 그래도 풀이하면'거미줄'이라는 뜻이며, 이는 세상의 크기만한 거미줄'이라 직역할 수 있습니다.</p>
-<br>
-<p>웹 이전의 인터넷은 초기의 명령어 기반 구조를 가지고 있었으며, 하드웨어와OS에 따라 다른 명령어를 써야 했습니다.
-하지만, 인터넷 상에서의 정보저장과 사용환경에 대한 연구를 통해 웹에서는</p>
-어떠한 종류의 컴퓨터를 사용하여도 한 가지 종류의 표준 사용자 환경으로 조작이 가능하도록 하였습니다.</p>
-<br>
-<p>웹의 역사를 잠깐 살펴보면 1969년도 인터넷이 개발된 이후 1989년 3월 팀 버너스 리에 의해 연구가 시작되고 개발되었으며,초장기 웹은 지금과는 사뭇 다른 양상을 보였으며, 단순한 정보저장의 역활로서 수행을 하게 되었습니다.하지만, 다양한 기업에서의 브라우저 발전, 기술적 차원의 발전을 통해 지금과 같은 웹이 탄생하게 되었습니다.</p>
-<P>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<li><a HREF=" 1.html " > HTML </a > </li >
+<li><a HREF=" 2.html " id="active"> CSS </a > </li >
+<li><a HREF=" 3.html "> javascript </a > </li>
+</ol>
+<div id="article">
+<h2>WEB</h2>
+<p>웹(web)? '월드 와이드 웹(world wide web') 의 줄임말록, 첫 글자를 따서 WWW 라고 부르기도 합니다.
+  '웹(web)'을 영어 뜻 그래도 풀이하면'거미줄'이라는 뜻이며, 이는 '세상의 크기만한 거미줄'이라 직역할 수 있습니다.</p>
+  <p>웹 이전의 인터넷은 초기의 명령어 기반 구조를 가지고 있었으며, 하드웨어와  OS에 따라 다른 명령어를 써야 했습니다.
+  하지만, 인터넷 상에서의 정보저장과 사용환경에 대한 연구를 통해 웹에서는 어떠한 종류의 컴퓨터를 사용하여도 한 가지 종류의 표준 사용자 환경으로 조작이 가능하도로 하였습니다.</p>
+<p>웹(web)의 역사를 잠깐 살펴보면 1969년도 인터넷이 개발된 이후 1989년 3월 팀 버너스 리에 의해 연구가 시작되고 개발되었으며,
+초창기의 웹은 지금과는 사뭇 다른 양상을 보였으며, 단순한 정보저장의 역활로서 수행을 하게 되었습니다.
 </p>
 <p>
-  <div id="disqus_thread"></div>
-  <script>
-  /**
-  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-  /*
-  var disqus_config = function () {
-  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-  };
-  */
-  (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-  s.src = 'https://web1-html-3.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+즉 초창기에 개발된W-B(Web Browser),W-S(Web Server),HTTP,HTML등의 기술은 public domain으로서 저작권에 대한 모든 부분에 오픈을 시켰으며 이에 웹은 폭발적인 사용과 발전 경험하며 지금에 이르게 된 것입니다.</p>
 </p>
+</div>
+</div>
 </BODY>
 </html>

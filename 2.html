@@ -3,51 +3,68 @@
 <head>
 <meta  charset = " utf-8 ">
 <title > css</title >
-<H1> <HREF = " index.html을 " > WEB </a> </H1>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143678484-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<style>
+body{
+  margin:0;
+}
 
-  gtag('config', 'UA-143678484-1');
-</script>
+a{
+  color:black;
+  text-decoration: none;
+  }
+h1{
+  font-size:45px;
+text-align: center;
+border-bottom:1px solid gray;
+margin:0;
+padding:20px;
+}
+ol{
+  border-right:1px solid gray;
+  width:100px;
+margin:0;
+padding:20px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol{
+  padding-left: 33px;
+}
+#grid #article{
+  padding-left: 25px;
+}
+@media(max-width:800px){
+  #grid{
+    display: block;
+  }
+  ol{
+    border-right:none;
+  }
+  h1{
+    border-bottom:none;
+  }
+}
+</style>
 </head>
 <body>
+  <h1><a href="index.html">WEB</a> </h1>
+  <div id="grid">
 <ol>
-<li><a HREF=" 1.html "> HTML </a > </li >
-<li><a HREF=" 2.html "> CSS </a > </li >
-<li><a HREF=" 3.html "> havascript </a > </li>
-</ ol >
+<li><a HREF=" 1.html " > HTML </a > </li >
+<li><a HREF=" 2.html " id="active"> CSS </a > </li >
+<li><a HREF=" 3.html "> javascript </a > </li>
+</ol>
+<div id="article">
 <h2>CSS</h2>
-<p><strong>css란?</strong></p>
-<p>HTML,XHTML,XML같은 문서의 스타일을 꾸밀 때 사용하는 스타일 시트 언어입니다.</p>
-<p>HTML로 문서의 뼈대를 만들면 CSS는 이 문서의 화장을 맡고 있는 셈인데요.</p>
-<p>글꼴이나, 배경색, 너비와 높이, 위치 등을 지정하거나, 웹 브라우저, 스크린 크ㄱ, 장치에 따라서 화면을 다르게 표시될 수 있도록 지정할 수 있습니다.</p>
-<P>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
-<p>
-  <div id="disqus_thread"></div>
-  <script>
-  /**
-  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-  /*
-  var disqus_config = function () {
-  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-  };
-  */
-  (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-  s.src = 'https://web1-html-3.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</p>
+<p><strong>css란?</strong>
+  ,XHTML,XML같은 문서의 스타일을 꾸밀 때 사용하는 스타일 시트 언어입니다.
+HTML로 문서의 뼈대를 만들면 CSS는 이 문서의 화장을 맡고 있는 셈인데요.
+글꼴이나, 배경색, 너비와 높이, 위치 등을 지정하거나, 웹 브라우저, 스크린 크기
+, 장치에 따라서 화면을 다르게 표시될 수 있도록 지정할 수 있습니다.</p>
+<img src="https://mdn.mozillademos.org/files/9461/css-declaration-small.png"
+</div>
+</div>
 </BODY>
 </html>
